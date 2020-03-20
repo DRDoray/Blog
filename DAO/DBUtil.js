@@ -3,11 +3,10 @@ var mysql = require("mysql");
 function createConnection() {
   var connection = mysql.createConnection({
     // host: "127.0.0.1",
-    host: "192.168.1.42",
-    port: "3306",
+    host: "localhost",
     user: "root",
-    password: "yyc102218",
-    database: "my_blog"
+    password: "root",
+    database: "node_blog"
   });
   return connection;
 }
